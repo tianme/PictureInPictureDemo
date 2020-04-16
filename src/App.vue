@@ -25,11 +25,11 @@ export default class App extends Vue {
   }
 
   goHome() {
-    this.$router.replace('/home');
+    this.$router.replace('./home');
   }
 
   goAbout() {
-    this.$router.replace('/about');
+    this.$router.replace('./about');
   }
 }
 </script>
