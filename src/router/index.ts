@@ -8,15 +8,15 @@ Vue.use(VueRouter);
 const routes: Array<RouteConfig> = [
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/picture-in-picture-demo/dist/home',
   },
   {
-    path: '/home',
+    path: '/picture-in-picture-demo/dist/home',
     name: 'Home',
     component: Home,
   },
   {
-    path: '/about',
+    path: '/picture-in-picture-demo/dist/about',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
