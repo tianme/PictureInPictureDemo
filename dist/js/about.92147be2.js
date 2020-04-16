@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{4334:function(t,n,u){},9354:function(t,n,u){"use strict";var a=u("4334"),e=u.n(a);e.a},f820:function(t,n,u){"use strict";u.r(n);var a=function(){var t=this,n=t.$createElement,u=t._self._c||n;return u("div",{staticClass:"about"},[t._v(" 关于是一个汉语词汇，读音为guān yú，介词，引进某种行为的关系者，组成介词结构做状语或定语。《内蒙访古》等均有相关记载。 ")])},e=[],s=(u("9354"),u("2877")),c={},i=Object(s["a"])(c,a,e,!1,null,"31058b64",null);n["default"]=i.exports}}]);
+//# sourceMappingURL=about.92147be2.js.map

@@ -1,20 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div>
+    <UserMedia />
+    <div class="btns">
+      <span @click="goHome">首页</span>
+      <span @click="goAbout">关于</span>
+    </div>
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+
+import UserMedia from './components/UserMedia.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    UserMedia,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  mounted() {
+    console.log('mounted');
+  }
+
+  goHome() {
+    this.$router.replace('/home');
+  }
+
+  goAbout() {
+    this.$router.replace('/about');
+  }
+}
 </script>
 
 <style>
@@ -24,6 +41,22 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+span {
+  background-color: pink;
+  padding: 10px 10px;
+  color: #fff;
+  color: #fff;
+  background-color: #1989fa;
+  border: 1px solid #1989fa;
+}
+span + span {
+  margin-left: 10px;
 }
 </style>
