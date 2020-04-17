@@ -24,6 +24,7 @@ export default class App extends Vue {
     console.log('mounted');
   }
 
+
   goHome() {
     this.$router.replace('/picture-in-picture-demo/dist/home');
   }
